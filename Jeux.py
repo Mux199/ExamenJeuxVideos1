@@ -6,8 +6,8 @@ class Jeux:
         self.description = description
         self.code_rayon = code_rayon
 
-    def jeu_is_valide(self):
-        if not self.code_rayon.code_rayon_isvalide():
+    def is_jeu_valide(self):
+        if not self.code_rayon.is_code_rayon_valide():
             return False
         if not (self.genre == "RPG" or self.genre == "sport" or self.genre == "simulation"):
             return False

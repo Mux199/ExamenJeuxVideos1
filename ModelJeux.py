@@ -1,5 +1,6 @@
 from pydantic import BaseModel
-import CodeRayon from CodeRayon
+from CodeRayon import CodeRayon
+
 
 class ModelJeux(BaseModel):
     console: str
@@ -7,4 +8,5 @@ class ModelJeux(BaseModel):
     prix: float
     description: str
     code_rayon: str
+
 
